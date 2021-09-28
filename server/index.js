@@ -35,6 +35,8 @@ app.use(cookieParser());
 
 app.use('/api/users', require('./routes/users'));
 
+// express.js의 라우터를 사용해서 request를 나눠준다.
+app.post('/api/product', require('./routes/product'));
 
 //use this to show the image you have in node js server to client (react js)
 //https://stackoverflow.com/questions/48914987/send-image-path-from-node-js-express-server-to-react-client
